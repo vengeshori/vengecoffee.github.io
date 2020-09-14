@@ -22,14 +22,14 @@
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-177534995-1"></script>
         <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-
-          gtag('config', 'UA-177534995-1');
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-177534995-1');
         </script>
         
-        <script>/*fade in animation*/
+        <!-- FadeIn animation -->
+        <script>
             $(function() {
                 function animation() {
                     $('.fadeInUp , .fadeInSlide , .fadeInSlide-1 , .fadeIn , .fadeIn-1').each(function() {
@@ -58,7 +58,7 @@
       
       
       <!--header-->
-      <div class="first"><!--ローでcイングの時に表示する内容-->
+      <div class="first">
           <img class="top-logo" src="top.jpg">
       </div>
       <script>
@@ -67,7 +67,6 @@
               document.addEventListener("touchmove", scroll_control, { passive: false });
           }
           function return_scroll() {
-              
               document.removeEventListener("mousewheel", scroll_control, { passive: false });
               document.removeEventListener('touchmove', scroll_control, { passive: false });
           }
@@ -145,16 +144,16 @@
               <div class="swiper-container slider1 slider2">
                   <div class="swiper-wrapper">
                       <div class="swiper-slide"><!--1枚目--><!--pcは9:16 spは1:1の画像を用意-->
-                          <img class="header-slider-img" src="header-slider-1.jpg" alt="Swiper01">
-                          <img class="header-slider-img-sp" src="sp-slide-1.jpg" alt="Swiper01">
+                          <img class="header-slider-img" src="header-slider-1.jpg" alt="Swiper01" loading="lazy">
+                          <img class="header-slider-img-sp" src="sp-slide-1.jpg" alt="Swiper01" loading="lazy">
                       </div>
                       <div class="swiper-slide"><!--2枚目-->
-                          <img class="header-slider-img" src="header-slider-2.jpg" alt="Swiper02">
-                          <img class="header-slider-img-sp" src="sp-slide-2.jpg" alt="Swiper02">
+                          <img class="header-slider-img" src="header-slider-2.jpg" alt="Swiper02" loading="lazy">
+                          <img class="header-slider-img-sp" src="sp-slide-2.jpg" alt="Swiper02" loading="lazy">
                       </div>
                       <div class="swiper-slide"><!--3枚目-->
-                          <img class="header-slider-img" src="header-slider-3.jpg" alt="Swiper03">
-                          <img class="header-slider-img-sp" src="sp-slide-3.jpg" alt="Swiper03">
+                          <img class="header-slider-img" src="header-slider-3.jpg" alt="Swiper03" loading="lazy">
+                          <img class="header-slider-img-sp" src="sp-slide-3.jpg" alt="Swiper03" loading="lazy">
                       </div>
                   </div>
                   <div class="swiper-pagination swiper-pagination-white"></div>
@@ -240,24 +239,6 @@
           </ul>
       </div>
       <script>/*スクロール時top固定メニューバー*/
-          /*$(function(){
-              function animation(){
-                  $('body').each(function(){
-                      var scroll = $(window).scrollTop();
-                      if (scroll > 100){
-                          $('.header-toggle').css('top','0');
-                          $('.header-toggle').css('opacity','1')
-                      }else{
-                          $('.header-toggle').css('top','-80px');
-                          $('.header-toggle').css('opacity','0');
-                      }
-                  });
-              }
-              animation();
-              $(window).scroll(function (){
-                  animation();
-              });
-          });*/
           $(window).scroll(function(){
               $('body').each(function(){
                   var scroll = $(window).scrollTop();
@@ -443,16 +424,16 @@
                   <div class="swiper-container thumbnail">
                       <div class="swiper-wrapper">
                           <div class="swiper-slide">
-                              <img class="thum" alt="" src="thum-6.jpg">
+                              <img class="thum" alt="" src="thum-6.jpg" loading="lazy">
                           </div>
                           <div class="swiper-slide">
-                              <img class="thum" alt="" src="thum-7.jpg">
+                              <img class="thum" alt="" src="thum-7.jpg" loading="lazy">
                           </div>
                           <div class="swiper-slide">
-                              <img class="thum" alt="" src="thum-3.jpg">
+                              <img class="thum" alt="" src="thum-3.jpg" loading="lazy">
                           </div>
                           <div class="swiper-slide">
-                              <img class="thum" alt="" src="thum-4.jpg">
+                              <img class="thum" alt="" src="thum-4.jpg" loading="lazy">
                           </div>
                       </div>
                   </div>
