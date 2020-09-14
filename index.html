@@ -66,7 +66,7 @@
               document.addEventListener("mousewheel", scroll_control, { passive: false });
               document.addEventListener("touchmove", scroll_control, { passive: false });
           }
-          function return_scroll() {
+          function restart_scroll() {
               document.removeEventListener("mousewheel", scroll_control, { passive: false });
               document.removeEventListener('touchmove', scroll_control, { passive: false });
           }
@@ -82,7 +82,7 @@
                   $(".first").css("opacity","0");
               }, 2000);
               setTimeout(function() {
-                  return_scroll();
+                  restart_scroll();
                   $(".first").css('display', 'none');
               }, 5000);
           }
@@ -162,9 +162,7 @@
               </div>
               <script>/*画像スライダー*/
                   document.addEventListener('DOMContentLoaded', function () {
-                      // @media screen and (max-width: 780px) と同じ
                       var mql = window.matchMedia('screen and (max-width: 560px)');
-
                       function checkBreakPoint(mql){
                         if (mql.matches) {
                             var slider1 = new Swiper('.slider1', {
@@ -219,7 +217,6 @@
                         }
                       }
                       mql.addListener(checkBreakPoint);
-                      // 初回チェック
                       checkBreakPoint(mql);
                   });
               </script>
