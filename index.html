@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="nog-top.css">
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script type="text/javascript" src="swiper-nog.js"></script>
-        <title>level-coffee</title>
+        <title>Progress-coffee</title>
         <meta name="format-detection" content="telephone=no">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -50,6 +50,9 @@
                 });
             });
         </script>
+        <script>/*webpとjpgの切り替え*/
+            
+        </script>
   </head>
     
     
@@ -61,7 +64,7 @@
       <div class="first">
           <img class="top-logo" src="top.jpg">
       </div>
-      <script>
+      <script>/*ローディング後に表示される画面*/
           function no_scroll() {
               document.addEventListener("mousewheel", scroll_control, { passive: false });
               document.addEventListener("touchmove", scroll_control, { passive: false });
@@ -292,9 +295,9 @@
           <div class="menu"><!--メニュー-->
               <div class="menu-right-color"></div>
               <p class="menu-title">DRINK MENU</p>
-              <p class="menu-pg fadeIn-1">当移動販売車では自家焙煎豆を使用した下3種類をお楽しみいただけます。飲み物についてご不明な点がございましたら、店員までお尋ね下さい。</p>
+              <p class="menu-pg fadeIn-1"><!--当移動販売車では自家焙煎豆を使用した下3種類をお楽しみいただけます。飲み物についてご不明な点がございましたら、店員までお尋ね下さい。--></p>
               <ul>
-                  <script>/*メニューhover時のアニメーション*/
+                  <!--<script>/*メニューhover時のアニメーション*/
                       $(function(){
                           $(".menu-over").hover(
                               function(){
@@ -313,9 +316,12 @@
                               }
                           );
                       });
-                  </script>
+                  </script>-->
+                  
+                  
                   <li class="menu-menu menu-1 fadeInSlide">
-                      <div class="viewmore">VIEW MORE</div>
+                      <!--<div class="viewmore">VIEW MORE</div>-->
+                      <div class="flex-img flex-img-1"></div>
                       <div class="menu-over menu-over-1"><!--画像にhoverしたら表示する価格等情報-->
                           <div class="menu-text">
                               <p class="pro-title">POUR OVER</p>
@@ -323,9 +329,11 @@
                           </div>
                       </div>
                   </li>
+                  
+                  
                   <li class="menu-menu menu-2 fadeInSlide-1">
-                      <div class="viewmore viewmore-1">VIEW MORE</div>
-                      <div class="menu-over menu-over-2"><!--画像にhoverしたら表示する価格等情報-->
+                      <!--<div class="viewmore viewmore-1">VIEW MORE</div>-->
+                      <div class="menu-over menu-over-2">
                           <div class="menu-text">
                               <p class="pro-title">ESPRESSO</p>
                               <p class="under">Espresso ¥400-</p>
@@ -333,16 +341,22 @@
                               <p class="under">Americano (ICED) ¥400-</p>
                           </div> 
                       </div>
+                      <div class="flex-img flex-img-2"></div>
                   </li>
+                  
+                  
                   <li class="menu-menu menu-3 fadeInSlide">
-                      <div class="viewmore viewmore-1">VIEW MORE</div>
-                      <div class="menu-over menu-over-3"><!--画像にhoverしたら表示する価格等情報-->
+                      <!--<div class="viewmore viewmore-1">VIEW MORE</div>-->
+                      <div class="flex-img flex-img-3"></div>
+                      <div class="menu-over menu-over-3">
                           <div class="menu-text">
                               <p class="pro-title">COLD BREW</p>
                               <p class="under">¥300-</p>
                           </div>
                       </div>
                   </li>
+                  
+                  
               </ul>
           </div>
           
