@@ -77,15 +77,15 @@
           window.onload = function() {
               scroll_control(event);
               no_scroll();
-              $(".top-logo").css("transform","translateY(-50%)translateX(-50%)scale(1)");
-              $(".top-logo").css("opacity","1")
+              $(".top-logo").css("transform","translateY(-50%)translateX(-50%)scale(.3)");
+              $(".top-logo").css("opacity","0")
               setTimeout(function() {
                   $(".first").css("opacity","0");
-              }, 2000);
+              }, 800);
               setTimeout(function() {
                   restart_scroll();
                   $(".first").css('display', 'none');
-              }, 5000);
+              }, 2500);
           }
       </script>
       
