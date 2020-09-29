@@ -63,7 +63,7 @@
           <img class="top-logo" src="top.jpg">
       </div>
       <script>/*ローディング後に表示される画面*/
-          function no_scroll() {
+          /*function no_scroll() {
               document.addEventListener("mousewheel", scroll_control, { passive: false });
               document.addEventListener("touchmove", scroll_control, { passive: false });
           }
@@ -73,17 +73,17 @@
           }
           function scroll_control(event) {
               event.preventDefault();
-          }
+          }*/
           window.onload = function() {
-              scroll_control(event);
-              no_scroll();
+              /*scroll_control(event);
+              no_scroll();*/
               $(".top-logo").css("transform","translateY(-50%)translateX(-50%)scale(.3)");
               $(".top-logo").css("opacity","0")
               setTimeout(function() {
                   $(".first").css("opacity","0");
               }, 800);
               setTimeout(function() {
-                  restart_scroll();
+                  /* restart_scroll(); */
                   $(".first").css('display', 'none');
               }, 2500);
           }
