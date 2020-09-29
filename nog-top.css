@@ -306,7 +306,6 @@
         height:300px;
         background-attachment: fixed;
         background-size:80%;
-        background-position:center;
         background-repeat:no-repeat;
         border:1px solid lightgray;
     }
@@ -314,15 +313,19 @@
         font-family: 'Quicksand', sans-serif;
         padding:50px 0;
         text-align:left;
+        margin-bottom:100px;
     }
     .flex-img-1{
         background-image:url(pourover.jpg);
+        background-position:50% 100%;
     }
     .flex-img-2{
         background-image:url(espresso.jpg);
+        background-position:50% 100%;
     }
     .flex-img-3{
         background-image:url(menu-3.jpg);
+        background-position:50% 100%;
     }
     .pro-title{
         font-size:22px;
@@ -591,6 +594,7 @@
         padding:50px 0 ;
         text-align:left;
         margin-left:5%;
+        
     }
     .flex-img-1{
         background-image:url(menu-1.jpg);

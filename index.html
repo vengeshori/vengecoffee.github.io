@@ -268,7 +268,7 @@
                       <div>
                           トレーニングの様子
                       </div>
-                      <div class="tohistory-div-before"></div>
+                      <!--<div class="tohistory-div-before"></div>-->
                   </a>
               </div>
               <img class="">
@@ -317,9 +317,9 @@
                   </script>-->
                   
                   
-                  <li class="menu-menu menu-1 fadeInSlide">
+                  <li class="menu-menu menu-1 adeInSlide">
                       <!--<div class="viewmore">VIEW MORE</div>-->
-                      <div class="flex-img flex-img-1"></div>
+                      <div class="flex-img flex-img-1 imgcg"></div>
                       <div class="menu-over menu-over-1"><!--画像にhoverしたら表示する価格等情報-->
                           <div class="menu-text">
                               <p class="pro-title">POUR OVER</p>
@@ -329,9 +329,9 @@
                   </li>
                   
                   
-                  <li class="menu-menu menu-2 fadeInSlide-1">
+                  <li class="menu-menu menu-2 adeInSlide-1">
                       <!--<div class="viewmore viewmore-1">VIEW MORE</div>-->
-                      <div class="flex-img flex-img-2"></div>
+                      <div class="flex-img flex-img-2 imgcg"></div>
                       <div class="menu-over menu-over-2">
                           <div class="menu-text">
                               <p class="pro-title">ESPRESSO</p>
@@ -343,9 +343,9 @@
                   </li>
                   
                   
-                  <li class="menu-menu menu-3 fadeInSlide">
+                  <li class="menu-menu menu-3 adeInSlide">
                       <!--<div class="viewmore viewmore-1">VIEW MORE</div>-->
-                      <div class="flex-img flex-img-3"></div>
+                      <div class="flex-img flex-img-3 imgcg"></div>
                       <div class="menu-over menu-over-3">
                           <div class="menu-text">
                               <p class="pro-title">COLD BREW</p>
@@ -355,9 +355,89 @@
                   </li>
                   
                   
+                  
+                
+                  
               </ul>
+              
+              
+              
+              <script>
+                  
+                 /* 
+                  $(window).scroll(function(){
+                      $('.menu').each(function(){
+                          var $win = $(window),
+                              $winH = $win.height(),
+                              point = $(".flex-img-1").offset().top + 300,
+                              point2 = $(".flex-img-2").offset().top + 300,
+                              point3 = $(".flex-img-3").offset().top + 300,
+                              x,
+                              x2,
+                              x3,
+                              scroll = $win.scrollTop() + $winH;
+                          if (scroll > point){
+                              x = (100 - ((scroll - point)*130/$winH )) + '%';
+                              $(".flex-img-1").css("background-position" , '50%'+ x);
+                          };
+                          if (scroll > point2){
+                              x2 = (100 - ((scroll - point2)*120/$winH )) + '%';
+                              $(".flex-img-2").css("background-position" , '50%'+ x2);
+                          };
+                          if (scroll > point3){
+                              x3 = (100 - ((scroll - point3)*100/$winH )) + '%';
+                              $(".flex-img-3").css("background-position" , '50%'+ x3);
+                          };
+                      });
+                  });
+                  */
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  document.addEventListener('DOMContentLoaded', function () {
+                      var mql = window.matchMedia('screen and (min-width: 930px)');
+                      function checkBreakPoint(mql){
+                          if (mql.matches) {
+                              $(window).scroll(function(){
+                                  $('.menu').each(function(){
+                                      var $win = $(window),
+                                          $winH = $win.height(),
+                                          point = $(".flex-img-1").offset().top + 300,
+                                          point2 = $(".flex-img-2").offset().top + 300,
+                                          point3 = $(".flex-img-3").offset().top + 300,
+                                          x,
+                                          x2,
+                                          x3,
+                                          scroll = $win.scrollTop() + $winH;
+                                      if (scroll > point){
+                                          x = (100 - ((scroll - point)*130/$winH )) + '%';
+                                          $(".flex-img-1").css("background-position" , '50%'+ x);
+                                      };
+                                      if (scroll > point2){
+                                          x2 = (100 - ((scroll - point2)*120/$winH )) + '%';
+                                          $(".flex-img-2").css("background-position" , '50%'+ x2);
+                                      };
+                                      if (scroll > point3){
+                                          x3 = (100 - ((scroll - point3)*100/$winH )) + '%';
+                                          $(".flex-img-3").css("background-position" , '50%'+ x3);
+                                      };
+                                  });
+                              });
+                          }
+                      };
+                      mql.addListener(checkBreakPoint);
+                      checkBreakPoint(mql);
+                  });
+                  
+                  
+              </script>
+              
+              
           </div>
-          
           
           <a name="history"></a>
           <div class="history"><!--トレーニングの様子-->
@@ -607,10 +687,6 @@
       
       <!--fotter-->
       <footer>
-          <div class="footer-right">
-          </div>
-          <div class="footer-left">
-          </div>
           <div class="footer-bottom"><!--支払い可能情報-->
               <img src="visa.png">
               <img src="paypay.png">
