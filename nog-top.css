@@ -342,7 +342,82 @@
         margin-bottom:0;
         color:rgba(0,0,0,.7);
     }
-    
+    .consept{
+        width:100%;
+        overflow:hidden;
+        position:relative;
+        text-align: center;
+
+        display:flex;
+    }
+    .consept-main-1{
+        flex:1 1 50%;
+        margin:80px 0;
+    }
+    .concept-main-2{
+        flex:1 1 calc(50% - 40px);
+        background-color:;
+        margin:20px 20px;
+        background-image:url(20200620_105048.jpg);
+        background-position:;
+        background-size:cover;
+    }
+    .concept-main-2-in{
+        width:100%;
+        height:100%;
+        background-color:rgba(215,215,215,.2);
+        position:relative;
+    }
+    .consept-main-1-h2-sp{
+        font-family: 'Cabin Sketch', cursive;
+        font-family: 'Shadows Into Light', cursive;
+        font-size:35px;
+        margin:0;
+        position:relative;
+        color:dimgray;
+        position:absolute;
+        top:50%;
+        transform:translateY(-60%);
+        width:100%;
+        text-shadow    : 
+       0.5px  0.5px 0.5px white,
+      -0.5px  0.5px 0.5px white,
+       0.5px -0.5px 0.5px white,
+      -0.5px -0.5px 0.5px white,
+       0.5px  0px 0.5px white,
+       0px  0.5px 0.5px white,
+      -0.5px  0px 0.5px white,
+       0px -0.5px 0.5px white;
+        letter-spacing:1px;
+    }
+    .consept-main-1-h2-sp::after{
+        position:absolute;
+        content:"";
+        :0;
+        width:120px;
+        height:4px;
+        bottom:-5px;
+        right:50%;
+        transform:translateX(50%);
+        background-color:gray;
+        border-radius:100%;
+
+    }
+    .consept-main-1-h2-sp span{
+        color:white;
+        text-shadow    : 
+       0.5px  0.5px 0.5px black,
+      -0.5px  0.5px 0.5px black,
+       0.5px -0.5px 0.5px black,
+      -0.5px -0.5px 0.5px black,
+       0.5px  0px 0.5px black,
+       0px  0.5px 0.5px black,
+      -0.5px  0px 0.5px black,
+       0px -0.5px 0.5px black;
+    }
+    .consept-main-1-h2{
+        display:none;
+    }
 }
 @media screen and (max-width: 930px){
     
@@ -458,9 +533,13 @@
         display:none;
     }
     .header-slider-img-sp{
-        width:100%;
+        min-width:100%;
         transition:.4s;
         background-color:white;
+        height:calc(100vh - 60px);
+    }
+    .swiper-int{
+        overflow:hidden;
     }
     .header-slider-img:hover{
         transform:scale(1.03);
@@ -620,6 +699,42 @@
         margin-bottom:0;
         color:rgba(0,0,0,.7);
     }
+    .consept{
+        width:100%;
+        overflow:hidden;
+        position:relative;
+        text-align: center;
+        padding:80px 0;
+    }
+    .consept-main-1{
+        width:100%;
+    }
+    .concept-main-2{
+        display:none;
+    }
+    .consept-main-1-h2{
+        font-family: 'Cabin Sketch', cursive;
+        font-family: 'Shadows Into Light', cursive;
+        font-size:27px;
+        margin:0;
+        position:relative;
+    }
+    .consept-main-1-h2::after{
+        position:absolute;
+        content:"";
+        :0;
+        width:120px;
+        height:4px;
+        bottom:-5px;
+        right:50%;
+        transform:translateX(50%);
+        background-color:darkslategray;
+        border-radius:100%;
+
+    }
+    .consept-main-1-h2-sp{
+        display:none;
+    }
 }
 
 
@@ -635,7 +750,6 @@ body{
     background-color:rgba(0,0,0,.05);
 
     overflow:hidden;
-    border-bottom:1px solid rgba(80,140,160,.2);
     
 }
 
@@ -671,70 +785,31 @@ body{
 .main{
 }
 /*コンセプト*/
-.consept{
-    width:100%;
-    overflow:hidden;
-    position:relative;
-    text-align: center;
-    padding:80px 0;
-    background-color:whitesmoke;
-    background-image:url(concept.jpg);
-    background-size:cover;
-    background-position:center;
-}
-.consept-left-color{
-    position:absolute;
-    transform:skewX(20deg);
-    background-color:rgba(169,186,203);
-    width:56%;
-    height:1500px;
-    right:-500px;
-    
-}
-.consept-main-1{
-    width:100%;
-}
+
 .consept-main-1 h2, .consept-main-1 h3{
     font-weight:1;
+    color:gray;
     
 }
-.consept-main-1 h2{
-    font-family: 'Cabin Sketch', cursive;
-    font-family: 'Shadows Into Light', cursive;
-    font-size:27px;
-    margin:0;
-    position:relative;
-}
-.consept-main-1 h2::after{
-    position:absolute;
-    content:"";
-    :0;
-    width:120px;
-    height:4px;
-    bottom:-5px;
-    right:50%;
-    transform:translateX(50%);
-    background-color:saddlebrown;
-    border-radius:100%;
-    
-}
+
 .consept-main-1 h3{
     font-family: 'Noto Serif JP', serif;
     font-size:30px;
     margin-top:10px;
-    color:darkslategray;
+    color:dimgray;
     letter-spacing: 4px;
     width:80%;
     margin:20px auto;
 }
 .consept-main-1 p{
     width:40%;
-    min-width:340px;
+    min-width:390px;
     margin:auto;
     line-height:2;
     color:rgba(0,0,0,.8);
     font-size:14px;
-    
+    color:gray;
+    letter-spacing:1px;
 }
 .tohistory{
     margin-top:40px;
@@ -746,7 +821,7 @@ body{
     font-size:15px;
     transition:.2s;
     text-decoration: none;
-    color:black;
+    color:gray;
 }
 .tohistory div{
     width:200px;
@@ -769,7 +844,6 @@ body{
 .tohistory:hover{
     cursor:pointer;
     font-size:15px;
-    color:darkslategray;
 }
 
 
@@ -796,6 +870,7 @@ body{
     margin-top:80px;
     position:relative;
     margin-bottom:30px;
+    color:dimgray;
 }
 .menu-title::after{
     position:absolute;
@@ -1080,5 +1155,56 @@ footer{
 .fadeIn-1{
     transition-delay:0s;
 }
+
+
+
+
+
+
+
+
+/*foote-bottom-mainpage*/
+.under-fotter{
+    margin:0;
+    padding:0;
+    position:absolute;
+    background-color:white;
+    width:100%;
+}
+/*footer-top-selescrt*/
+.u-footer-top{
+    width:100%;
+    margin:0;
+    background-color:lightgray;
+    display:flex;
+}
+.u-footer-top h2{
+    display:inline-block;
+    font-size:35px;
+    font-family: 'Cabin Sketch', cursive;
+    font-weight:1;
+}
+.u-footer-top ul{
+    list-style: none;
+    margin:30px 0;
+    font-size:20px;
+}
+.u-footer-top li{
+    list-style: none;
+    display:inline-block;
+    font-family: 'Quicksand', sans-serif;
+    margin:0 10px;
+    color:black;
+}
+.u-footer-top img{
+    float:right;
+    width:25px;
+    height:auto;
+    margin:30px;
+}
+.ul transform{
+    display:flex;
+}
+
 
 
