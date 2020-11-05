@@ -445,13 +445,22 @@
         display:none;
     }
     /*header*/
+    .header-oku{
+        position:fixed;
+        top:0;
+        width:100%;
+        height:60px;
+        background-color:rgba(255,255,255,.9);
+        z-index:400;
+        opacity:0;
+        transition:0.5s;
+    }
     header{
         position:fixed;
         top:0;
         text-align:center;
         z-index:500;
         width:100%;
-        background-color:white;
     }
     .nog-logo{
         font-family: 'Cabin Sketch', cursive;
@@ -490,30 +499,32 @@
     .sp-point p{
         display:block;
         height:2px;
-        background-color:gray;
+        background-color:black;
         width:24px;
         padding:0;
         margin:5px 0;
     }
     .sp-toggle-menu{
-        width:100%;
+        width:200px;
+        height:100vh;
         text-align:center;
         position:fixed;
         
         top:61px;
         z-index:999;
-        background-color:white;
-        border-top:1px solid rgba(0,0,0,.1);
+        background-color:rgba(255,255,255,.9);
+        
     }
     .sp-toggle-menu a{
-        display:inline-block;
-        font-family: 'Cabin Sketch', cursive;
-        font-family: 'Shadows Into Light', cursive;
-        color:dimgray;
-        margin:4px 20px;
+        display:block;
+        font-family: 'Barlow Condensed', sans-serif;
+        color:black;
+        margin:40px 0px;
         text-decoration:none;
-        font-size:17px;
+        font-size:25px;
         transition:.2s;
+        padding-left:25px;
+        text-align:left;
     }
     .sp-toggle-menu a:hover{
         letter-spacing: 2px;
@@ -527,7 +538,7 @@
         margin:0 auto;
         opacity:.9;
         overflow:hidden;
-        margin-top:60px;
+        
         background-color:;
     }
     .header-slider-img{
@@ -542,7 +553,7 @@
         width:100%;
         transition:.4s;
         background-color:white;
-        height:calc(100vh - 60px);
+        height:calc(100vh);
         display:inline-block;
         object-fit:cover;
         object-position:center
@@ -745,6 +756,9 @@
     .consept-main-1-h2-sp{
         display:none;
     }
+    .point-rotate{
+        transform:rotate(90deg)translateX(-30px);
+    }
 }
 
 
@@ -757,14 +771,12 @@
         width:100%;
         transition:.4s;
         background-color:white;
-        height:calc(100vh - 60px);
+        height:calc(100vh);
         display:inline-block;
         object-fit:cover;
     }
 
 }
-
-
 
 
 
@@ -828,16 +840,16 @@ body{
 
 .consept-main-1 h3{
     font-family: 'Noto Serif JP', serif;
-    font-size:30px;
-    margin-top:10px;
+    font-size:27px;
     color:dimgray;
-    letter-spacing: 4px;
-    width:80%;
-    margin:20px auto;
+    letter-spacing: 2px;
+    margin:30px auto;
+    width:90%;
 }
+
 .consept-main-1 p{
     width:40%;
-    min-width:390px;
+    min-width:330px;
     margin:auto;
     line-height:2;
     color:rgba(0,0,0,.8);

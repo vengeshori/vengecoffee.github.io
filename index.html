@@ -25,7 +25,7 @@
             gtag('js', new Date());
             gtag('config', 'UA-177534995-1');
         </script>
-        
+        <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap" rel="stylesheet">
         <!-- FadeIn animation -->
         <script>/*webpとjpgの切り替え*/
             
@@ -98,7 +98,7 @@
           <div class="header-left-color"></div>
           
           
-          
+          <div class="header-oku"></div>
           <header><!--ヘッダー--><!--pcとspで別のcss-->
               <p class="nog-logo">Progress Coffee</p>
               <p class="nog-logo-side">皆さんと一緒に育てていくコーヒーの移動販売車</p>
@@ -119,14 +119,17 @@
                   $(".sp-toggle-menu").hide();
                   $(".sp-point").click(
                   function(){
-                      $(".sp-toggle-menu").slideToggle(500);
+                      $(".sp-toggle-menu").animate({"width":"toggle"});
                       if(t==1){
                           $(".sp-point").css("transform","scaleY(.6)");
+                          $(".header-oku").css("opacity","1");
                           t=2;
                       }else{
                           $(".sp-point").css("transform","scaleY(1)");
+                          $(".header-oku").css("opacity","0");
                           t=1;
                       }
+                      console.log("gg");
                   });
               });
           </script>
@@ -157,7 +160,7 @@
                           <img class="header-slider-img-sp" src="sp-slide-3.jpg" alt="Swiper03" loading="lazy">
                       </div>
                   </div>
-                  <div class="swiper-pagination swiper-pagination-white"></div>
+                  <div class="swiper-pagination swiper-pagination-white point-rotate"></div>
                   <div class="swiper-button-prev swiper-button-black"></div>
                   <div class="swiper-button-next swiper-button-black"></div>
               </div>
@@ -183,7 +186,7 @@
                                     enabled: true,
                                     onlyInViewport: false,
                                 },
-                                utoplay: {
+                                autoplay: {
                                     delay: 4000,
                                     disableOnInteraction: false,
                                     speed:5000,
@@ -208,7 +211,7 @@
                                     enabled: true,
                                     onlyInViewport: false,
                                 },
-                                utoplay: {
+                                autoplay: {
                                     delay: 4000,
                                     disableOnInteraction: false,
                                     speed:5000,
