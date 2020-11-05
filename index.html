@@ -163,7 +163,7 @@
               </div>
               <script>/*画像スライダー*/
                   document.addEventListener('DOMContentLoaded', function () {
-                      var mql = window.matchMedia('screen and (max-width: 550px)');
+                      var mql = window.matchMedia('screen and (max-width: 519px)');
                       function checkBreakPoint(mql){
                         if (mql.matches) {
                             var slider1 = new Swiper('.slider1', {
@@ -183,7 +183,7 @@
                                     enabled: true,
                                     onlyInViewport: false,
                                 },
-                                autoplay: {
+                                utoplay: {
                                     delay: 4000,
                                     disableOnInteraction: false,
                                     speed:5000,
@@ -194,7 +194,7 @@
                             var slider2 = new Swiper('.slider2', {
                                 loop: true,
                                 centeredSlides: true,
-                                slidesPerView: 1.5,
+                                slidesPerView: 1.4,
                                 pagination:{
                                     el: '.swiper-pagination',
                                     type: 'bullets',
@@ -208,7 +208,7 @@
                                     enabled: true,
                                     onlyInViewport: false,
                                 },
-                                autoplay: {
+                                utoplay: {
                                     delay: 4000,
                                     disableOnInteraction: false,
                                     speed:5000,

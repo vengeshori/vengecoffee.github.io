@@ -528,18 +528,24 @@
         opacity:.9;
         overflow:hidden;
         margin-top:60px;
+        background-color:;
     }
     .header-slider-img{
         display:none;
     }
+    .swiper-int{
+        overflow:hidden;
+        text-align:center;
+        object-fit:cover;
+    }
     .header-slider-img-sp{
-        min-width:100%;
+        width:100%;
         transition:.4s;
         background-color:white;
         height:calc(100vh - 60px);
-    }
-    .swiper-int{
-        overflow:hidden;
+        display:inline-block;
+        object-fit:cover;
+        object-position:center
     }
     .header-slider-img:hover{
         transform:scale(1.03);
@@ -551,9 +557,13 @@
     }
     .swiper-slide-next{
         opacity: 0.6;
+        
     }
     .swiper-slide-prev{
         opacity: 0.6;
+    }
+    .swiper-slide{
+        text-align:center;
     }
     /*見え隠れするメニューバー*/
     .header-toggle{
@@ -736,6 +746,30 @@
         display:none;
     }
 }
+
+
+
+@media screen and (max-width: 519px){
+    .swiper-int{
+        overflow:hidden;
+    }
+    .header-slider-img-sp{
+        width:100%;
+        transition:.4s;
+        background-color:white;
+        height:calc(100vh - 60px);
+        display:inline-block;
+        object-fit:cover;
+    }
+
+}
+
+
+
+
+
+
+
 
 
 body{
