@@ -39,7 +39,6 @@
         text-align:center;
         padding:50px 0 0px calc(280px + 195px + 17%);
         z-index:500;
-
     }
     .nog-logo{
         font-family: 'Cabin Sketch', cursive;
@@ -351,8 +350,8 @@
         display:flex;
     }
     .consept-main-1{
-        flex:1 1 50%;
-        margin:80px 0;
+        flex:1 1 calc(50%);
+        margin:80px 0px;
     }
     .concept-main-2{
         flex:1 1 calc(50% - 40px);
@@ -374,21 +373,15 @@
         font-size:35px;
         margin:0;
         position:relative;
-        color:dimgray;
+        color:rgba(0,0,0,.7);
         position:absolute;
         top:50%;
         transform:translateY(-60%);
         width:100%;
-        text-shadow    : 
-       0.5px  0.5px 0.5px white,
-      -0.5px  0.5px 0.5px white,
-       0.5px -0.5px 0.5px white,
-      -0.5px -0.5px 0.5px white,
-       0.5px  0px 0.5px white,
-       0px  0.5px 0.5px white,
-      -0.5px  0px 0.5px white,
-       0px -0.5px 0.5px white;
         letter-spacing:1px;
+        backdrop-filter: blur(2px);
+        -webkit-backdrop-filter: blur(2px);
+        border-radius:100%;
     }
     .consept-main-1-h2-sp::after{
         position:absolute;
@@ -404,16 +397,7 @@
 
     }
     .consept-main-1-h2-sp span{
-        color:white;
-        text-shadow    : 
-       0.5px  0.5px 0.5px black,
-      -0.5px  0.5px 0.5px black,
-       0.5px -0.5px 0.5px black,
-      -0.5px -0.5px 0.5px black,
-       0.5px  0px 0.5px black,
-       0px  0.5px 0.5px black,
-      -0.5px  0px 0.5px black,
-       0px -0.5px 0.5px black;
+        color: color:rgba(0,0,0,.7);;
     }
     .consept-main-1-h2{
         display:none;
@@ -421,6 +405,12 @@
 }
 @media screen and (max-width: 930px){
     
+    
+    .header{
+        padding-bottom:0px;
+        margin-bottom:-10px;
+        position:relative;
+    }
     .top-logo{
         position:absolute;
         top:50%;
@@ -430,11 +420,6 @@
         max-width:80px;
         opacity:1;
         transition-delay:0;
-    }
-    .header{
-        padding-bottom:0px;
-        margin-bottom:-10px;
-        position:relative;
     }
     .header-left-color{
         position:absolute;
@@ -446,12 +431,12 @@
     }
     /*header*/
     .header-oku{
-        position:fixed;
+        position:absolute;
         top:0;
         width:100%;
         height:60px;
         background-color:rgba(255,255,255,.9);
-        z-index:400;
+        z-index:10;
         opacity:0;
         transition:0.5s;
     }
@@ -461,15 +446,23 @@
         text-align:center;
         z-index:500;
         width:100%;
+        height:60px;
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(24px);
     }
     .nog-logo{
         font-family: 'Cabin Sketch', cursive;
         display:inline-block;
         padding:0;
         margin:0;
-        font-size:30px;
+        font-size:28px;
         margin:13px 0;
         transform:scale(.8);
+        z-index:1000;
+        position:absolute;
+        left:50%;
+        transform:translateX(-50%);
+        min-width:240px;
     }
     .nog-logo-side{
         display:none;
@@ -479,19 +472,21 @@
     }
     .instagram{
         position:absolute;
-        left:7%;
+        right:7%;
         width:30px;
         padding:0;
         top:17px;
+        z-index:1000;
     }
     .sp-point{
         position:absolute;
-        right:7%;
+        left:7%;
         width:24px;
         padding:0;
         top:20px;
         transition:.3s;
         transform:scaleY();
+        z-index:1000;
     }
     .sp-point:hover{
         cursor:pointer;
@@ -757,7 +752,7 @@
         display:none;
     }
     .point-rotate{
-        transform:rotate(90deg)translateX(-30px);
+        
     }
 }
 
@@ -775,6 +770,9 @@
         display:inline-block;
         object-fit:cover;
     }
+    .header-light{
+        position:absolute;
+    }x
 
 }
 
@@ -845,11 +843,12 @@ body{
     letter-spacing: 2px;
     margin:30px auto;
     width:90%;
+    min-width:310px;
 }
 
 .consept-main-1 p{
-    width:40%;
-    min-width:330px;
+    width:50%;
+    min-width:230px;
     margin:auto;
     line-height:2;
     color:rgba(0,0,0,.8);

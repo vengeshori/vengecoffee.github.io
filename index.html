@@ -98,8 +98,8 @@
           <div class="header-left-color"></div>
           
           
-          <div class="header-oku"></div>
           <header><!--ヘッダー--><!--pcとspで別のcss-->
+              <div class="header-oku"></div>
               <p class="nog-logo">Progress Coffee</p>
               <p class="nog-logo-side">皆さんと一緒に育てていくコーヒーの移動販売車</p>
               <a href="#consept">CONCEPT</a>
@@ -123,10 +123,12 @@
                       if(t==1){
                           $(".sp-point").css("transform","scaleY(.6)");
                           $(".header-oku").css("opacity","1");
+                          
                           t=2;
                       }else{
                           $(".sp-point").css("transform","scaleY(1)");
                           $(".header-oku").css("opacity","0");
+                          
                           t=1;
                       }
                       console.log("gg");
@@ -153,11 +155,11 @@
                       </div>
                       <div class="swiper-slide swiper-int"><!--2枚目-->
                           <img class="header-slider-img" src="header-slider-2.jpg" alt="Swiper02" loading="lazy">
-                          <img class="header-slider-img-sp" src="sp-slide-2.jpg" alt="Swiper02" loading="lazy">
+                          <img class="header-slider-img-sp" src="slider-001.jpg" alt="Swiper02" loading="lazy">
                       </div>
                       <div class="swiper-slide swiper-int"><!--3枚目-->
                           <img class="header-slider-img" src="header-slider-3.jpg" alt="Swiper03" loading="lazy">
-                          <img class="header-slider-img-sp" src="sp-slide-3.jpg" alt="Swiper03" loading="lazy">
+                          <img class="header-slider-img-sp" src="sp-slide-2.jpg" alt="Swiper03" loading="lazy">
                       </div>
                   </div>
                   <div class="swiper-pagination swiper-pagination-white point-rotate"></div>
@@ -277,7 +279,7 @@
               </div>
               <div class="concept-main-2">
                   <div class="concept-main-2-in">
-                      <h2 class="consept-main-1-h2-sp"><span>S</span>HOP CONCEPT</h2>
+                      <h2 class="consept-main-1-h2-sp"><span>S</span>HOP <span>C</span>ONCEPT</h2>
                   </div>
               </div>
               <img class="">
