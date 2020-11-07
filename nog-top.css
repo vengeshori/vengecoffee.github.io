@@ -368,8 +368,7 @@
         position:relative;
     }
     .consept-main-1-h2-sp{
-        font-family: 'Cabin Sketch', cursive;
-        font-family: 'Shadows Into Light', cursive;
+        font-family: 'Barlow Condensed', sans-serif;
         font-size:35px;
         margin:0;
         position:relative;
@@ -388,7 +387,7 @@
         content:"";
         :0;
         width:120px;
-        height:4px;
+        height:3px;
         bottom:-5px;
         right:50%;
         transform:translateX(50%);
@@ -449,6 +448,8 @@
         height:60px;
         backdrop-filter: blur(12px);
         -webkit-backdrop-filter: blur(24px);
+        border-bottom:1px solid;
+        
     }
     .nog-logo{
         font-family: 'Cabin Sketch', cursive;
@@ -456,7 +457,7 @@
         padding:0;
         margin:0;
         font-size:28px;
-        margin:13px 0;
+        margin-top:17px;
         transform:scale(.8);
         z-index:1000;
         position:absolute;
@@ -508,7 +509,7 @@
         top:61px;
         z-index:999;
         background-color:rgba(255,255,255,.9);
-        
+        border-right:1px solid gray;
     }
     .sp-toggle-menu a{
         display:block;
@@ -729,8 +730,7 @@
         display:none;
     }
     .consept-main-1-h2{
-        font-family: 'Cabin Sketch', cursive;
-        font-family: 'Shadows Into Light', cursive;
+        font-family: 'Barlow Condensed', sans-serif;
         font-size:27px;
         margin:0;
         position:relative;
@@ -740,7 +740,7 @@
         content:"";
         :0;
         width:120px;
-        height:4px;
+        height:2.5px;
         bottom:-5px;
         right:50%;
         transform:translateX(50%);
@@ -752,7 +752,8 @@
         display:none;
     }
     .point-rotate{
-        
+        text-align:right;
+        transform:translateX(-10px);
     }
 }
 
@@ -772,7 +773,7 @@
     }
     .header-light{
         position:absolute;
-    }x
+    }
 
 }
 
@@ -833,6 +834,7 @@ body{
 .consept-main-1 h2, .consept-main-1 h3{
     font-weight:1;
     color:gray;
+
     
 }
 
@@ -847,7 +849,7 @@ body{
 }
 
 .consept-main-1 p{
-    width:50%;
+    width:80%;
     min-width:230px;
     margin:auto;
     line-height:2;
@@ -909,8 +911,7 @@ body{
     display:inline-block;
     font-size:30px;
     letter-spacing:4px;
-    font-family: 'Cabin Sketch', cursive;
-    font-family: 'Shadows Into Light', cursive;
+    font-family: 'Barlow Condensed', sans-serif;
     margin-bottom:20px;
     margin-top:80px;
     position:relative;
@@ -922,7 +923,7 @@ body{
     content:"";
     :0;
     width:120px;
-    height:4px;
+    height:2.5px;
     bottom:-5px;
     right:50%;
     transform:translateX(50%);
@@ -1023,8 +1024,7 @@ body{
     text-align:center;
     font-size:30px;
     position:relative;
-    font-family: 'Cabin Sketch', cursive;
-    font-family: 'Shadows Into Light', cursive;
+    font-family: 'Barlow Condensed', sans-serif;
     color:lightslategray;
     position:relative;
     letter-spacing:2px;
@@ -1035,7 +1035,7 @@ body{
     right:1px;left:1px;
     margin:0 auto;
     width:120px;
-    height:4px;
+    height:2px;
     border-radius:100%;
     background-color:gray;
     content:"";
@@ -1073,8 +1073,7 @@ body{
 .shop-title{
     font-size:30px;
     text-align:center;
-    font-family: 'Cabin Sketch', cursive;
-    font-family: 'Shadows Into Light', cursive;
+    font-family: 'Barlow Condensed', sans-serif;
     color:midnightblue;
     position:relative;
     letter-spacing:2px;
@@ -1082,7 +1081,7 @@ body{
 .shop-title::after{
     content:"";
     width:80px;
-    height:4px;
+    height:2px;
     border-radius:100%;
     position:absolute;
     background-color:midnightblue;
