@@ -164,7 +164,7 @@
         flex:1 1 50%;
     }
     .history-img-1{
-        background-image:url(thum-6.jpg);
+        background-image:url(thum-6.webp);
         background-size:cover;
         background-position:center;
         position:relative;
@@ -201,7 +201,7 @@
         background-color:white;
     }
     .history-content-2{
-        background-image:url(thum-7.jpg);
+        background-image:url(thum-7.webp);
         background-size:cover;
         background-position:center;
         position:relative;
@@ -213,7 +213,7 @@
         font-family: 'Shadows Into Light', cursive;
     }
     .history-img-3{
-        background-image:url(thum-3.jpg);
+        background-image:url(thum-3.webp);
         background-size:cover;
         background-position:center;
         position:relative;
@@ -231,7 +231,7 @@
         background-color:white;
     }
     .history-content-4{
-        background-image:url(thum-4.jpg);
+        background-image:url(thum-4.webp);
         background-size:cover;
         background-position:center;
         position:relative;
@@ -315,15 +315,15 @@
         margin-bottom:100px;
     }
     .flex-img-1{
-        background-image:url(pourover.jpg);
+        background-image:url(pourover.webp);
         background-position:50% 100%;
     }
     .flex-img-2{
-        background-image:url(espresso.jpg);
+        background-image:url(espresso.webp);
         background-position:50% 100%;
     }
     .flex-img-3{
-        background-image:url(menu-3.jpg);
+        background-image:url(menu-3.webp);
         background-position:50% 100%;
     }
     .pro-title{
@@ -357,7 +357,7 @@
         flex:1 1 calc(50% - 40px);
         background-color:;
         margin:20px 20px;
-        background-image:url(20200620_105048.jpg);
+        background-image:url(20200620_105048.webp);
         background-position:;
         background-size:cover;
     }
@@ -623,16 +623,16 @@
         background-color:white;
     } 
     .top-1{
-        background-image:url(thum-6.jpg);
+        background-image:url(thum-6.webp);
     }
     .top-2{
-        background-image:url(thum-7.jpg);
+        background-image:url(thum-7.webp);
     }
     .top-3{
-        background-image:url(thum-3.jpg);
+        background-image:url(thum-3.webp);
     }
     .top-4{
-        background-image:url(thum-4.jpg);
+        background-image:url(thum-4.webp);
     }
     .content-1-1{
         width:90%;
@@ -693,13 +693,13 @@
         
     }
     .flex-img-1{
-        background-image:url(menu-1.jpg);
+        background-image:url(menu-1.webp);
     }
     .flex-img-2{
-        background-image:url(menu-2.jpg);
+        background-image:url(menu-2.webp);
     }
     .flex-img-3{
-        background-image:url(menu-3.jpg);
+        background-image:url(menu-3.webp);
     }
     .pro-title{
         font-size:17px;
