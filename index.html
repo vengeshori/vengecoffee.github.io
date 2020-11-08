@@ -105,11 +105,10 @@
               <a href="#history">HISTORY</a>
               <a href="#shop" class="a-right">ACCESS</a>
               <div class="sp-point"><!--メニューバー開閉用ボタン-->
-                  <p></p>
-                  <p></p>
-                  <p></p>
+                  <p class="point-1"></p>
+                  <p class="point-2"></p>
+                  <p class="point-3"></p>
               </div>
-              <img class="instagram" src="instagram.png">
           </header>
           <script>/*sp用のtoggleメニューバー*/
               $(function(){
@@ -119,11 +118,15 @@
                   function(){
                       $(".sp-toggle-menu").animate({"width":"toggle"});
                       if(t==1){
-                          $(".sp-point").css("transform","scaleY(.6)");
+                          $(".point-2").css("width","0");
+                          $(".point-1").css("transform","rotate(35deg)");
+                          $(".point-3").css("transform","rotate(-35deg)");
                           $(".header-oku").css("opacity","1");
                           t=2;
                       }else{
-                          $(".sp-point").css("transform","scaleY(1)");
+                          $(".point-2").css("width","24px");
+                          $(".point-1").css("transform","rotate(0deg)");
+                          $(".point-3").css("transform","rotate(0deg)");
                           $(".header-oku").css("opacity","0");
                           t=1;
                       }
@@ -139,6 +142,7 @@
               <a href="#menu">MENU</a>
               <a href="#history">HISTORY</a>
               <a href="#shop">ACCESS</a>
+              <img class="instagram" src="instagram.png">
           </div>
           
           
