@@ -560,7 +560,7 @@
         width:100%;
         transition:.4s;
         background-color:white;
-        height:calc(100vh);
+        height:;
         display:inline-block;
         object-fit:cover;
         object-position:center
