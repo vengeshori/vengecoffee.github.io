@@ -44,11 +44,11 @@
         font-family: 'Cabin Sketch', cursive;
         display:inline-block;
         position:absolute;
-        top:33px;
+        top:40px;
         left:7%;
         padding:0;
         margin:0;
-        font-size:40px;
+        font-size:35px;
         width:280px;
     }
     .nog-logo-side{
@@ -311,7 +311,7 @@
     .menu-over{
         font-family: 'Quicksand', sans-serif;
         padding:50px 0;
-        text-align:left;
+        text-align:center;
         margin-bottom:100px;
     }
     .flex-img-1{
@@ -327,14 +327,15 @@
         background-position:50% 100%;
     }
     .pro-title{
-        font-size:22px;
+		font-size:22px;
         padding-bottom:5px;
         padding:10px 0 0 0;
-        margin-right:30px;
+        margin-right:0px;
         color:darkslategrey;
         margin-top:-10px;
-        margin-bottom:0;
+        margin-bottom:10px;
         border-bottom:1px solid;
+        padding-bottom:10px;
     }
     .under{
         font-size:15px;
@@ -390,10 +391,11 @@
         height:3px;
         bottom:-5px;
         right:50%;
-        transform:translateX(50%);
-        background-color:gray;
+        transform:translateX(50%)translateY(3px);
+        background-color:black;
         border-radius:100%;
-
+        border:0.5px solid lightgray;
+        
     }
     .consept-main-1-h2-sp span{
         color: color:rgba(0,0,0,.7);;
